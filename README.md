@@ -1,4 +1,4 @@
-# Pulsar - Microblogging Platform (like twitter)  short  and meaningful text sharing app
+# Pulsar - Microblogging Platform (like twitter)  short  and meaningful tweet app
 🚀 Pulsar is a full-stack microblogging platform built to demonstrate proficiency in Java, Spring Boot, REST API design, JWT-based authentication, and Flutter for cross-platform frontend development. This project was completed as part of a hiring task to showcase clean architecture, system design, and feature implementation within a 6-day timeframe.
 Objective
 Pulsar is designed to allow users to register, post tweets, follow other users, like tweets, and search for content, all through a responsive Flutter frontend. The backend is powered by Spring Boot with secure JWT authentication and a MySQL database, following clean architecture principles.
