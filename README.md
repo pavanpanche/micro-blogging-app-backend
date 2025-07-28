@@ -1,6 +1,6 @@
 # 📣 Micro Blogging App (Pulsar)
 
-A full-stack micro-blogging application (similar to Twitter), built in **6 days** using **Spring Boot** (backend) and **Flutter** (frontend).  
+A full-stack micro-blogging application (similar to Twitter), built  using **Spring Boot** (backend) and **Flutter** (frontend).  
 This project demonstrates secure authentication, tweet management, real-time search, a follow system, and a clean mobile/web interface.
 
 
