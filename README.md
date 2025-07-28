@@ -122,7 +122,7 @@ http://localhost:8080/swagger-ui/index.html
 🧪 Testing
 All APIs tested via Postman.
 
---- Postman collection included in /docs/ folder
+--- Postman collection included in: https://drive.google.com/drive/folders/1_ySozFHyzFxJ48hpvoFNVzmGFn7h7KKT?usp=drive_link 
 
 📁 Folder Structure Overview (Backend)
 pulsar-blog-app/
