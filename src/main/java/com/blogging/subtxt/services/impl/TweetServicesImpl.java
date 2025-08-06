@@ -166,7 +166,7 @@ public class TweetServicesImpl implements TweetServices {
                 .updatedAt(tweet.getUpdatedAt())
                 .username(tweet.getUser() != null ? tweet.getUser().getUsername() : "unknown")
                 .likeCount(likeService.countLikesForTweet(tweet.getId()))
-                .liked(likeService.isTweetLikedByUser(tweet.getId(), email))
+                .isLiked(likeService.isTweetLikedByUser(tweet.getId(), email))
                 .hashtags(tweet.getHashtags() != null
                         ? tweet.getHashtags().stream().map(Hashtag::getTag).collect(Collectors.toSet())
                         : Set.of())

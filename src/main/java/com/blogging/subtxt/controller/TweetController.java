@@ -91,4 +91,9 @@ public class TweetController {
     public ResponseEntity<List<TweetResponse>> getTweetsByHashtag(@PathVariable String tag) {
         return ResponseEntity.ok(tweetServices.getTweetsByHashtag(tag));
     }
+    //get all without paginated
+    @GetMapping("/all")
+    public ResponseEntity<List<TweetResponse>> getAllTweets() {
+        return ResponseEntity.ok(tweetServices.getAllTweets());
+    }
 }

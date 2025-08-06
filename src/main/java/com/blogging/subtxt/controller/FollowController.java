@@ -4,7 +4,7 @@ import com.blogging.subtxt.services.FollowService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import java.security.Principal;
+        import java.security.Principal;
 import java.util.List;
 import java.util.Map;
 
@@ -18,7 +18,7 @@ public class FollowController {
     @PostMapping("/{username}")
     public ResponseEntity<String> followUser(@PathVariable String username, Principal principal) {
         if (principal.getName().equals(username)) {
-            return ResponseEntity.badRequest().body("You cannot follow yourself");
+            return ResponseEntity.badRequest().body("Please do not follow yourself");
         }
         followService.followUser(principal.getName(), username);
         return ResponseEntity.ok("Now following " + username);

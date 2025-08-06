@@ -1,5 +1,4 @@
 package com.blogging.subtxt.security;
-
 import com.blogging.subtxt.models.User;
 import com.blogging.subtxt.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;

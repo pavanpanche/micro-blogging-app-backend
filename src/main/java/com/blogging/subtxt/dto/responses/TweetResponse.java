@@ -13,7 +13,7 @@ public class TweetResponse {
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
     private long likeCount;
-    private boolean liked;
+    private boolean isLiked;
 
-    private Set<String> hashtags; // hashtag
+    private Set<String> hashtags;
 }

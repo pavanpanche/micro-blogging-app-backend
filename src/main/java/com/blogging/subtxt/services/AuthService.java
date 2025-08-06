@@ -1,6 +1,7 @@
 package com.blogging.subtxt.services;
 
 import com.blogging.subtxt.dto.responses.AuthResponse;
+import com.blogging.subtxt.security.MyUserDetails;
 import com.blogging.subtxt.security.MyUserDetailsService;
 import com.blogging.subtxt.security.jwt.JwtUtil;
 import lombok.RequiredArgsConstructor;
@@ -19,12 +20,13 @@ public class AuthService {
 
     public AuthResponse loginWithTokens(String email, String password) {
         authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(email, password));
-        UserDetails user = userDetailsService.loadUserByUsername(email);
 
+        UserDetails userDetails = userDetailsService.loadUserByUsername(email);
+        MyUserDetails user = (MyUserDetails) userDetails;
         String accessToken = jwtUtil.generateToken(user);
         String refreshToken = jwtUtil.generateRefreshToken(email);
 
-        return new AuthResponse(accessToken, refreshToken, user.getUsername());
+        return new AuthResponse(accessToken, refreshToken, user.getAppUsername(), user.getUserId());
     }
 
     public AuthResponse refreshAccessToken(String refreshToken) {
@@ -33,12 +35,11 @@ public class AuthService {
         }
 
         String username = jwtUtil.extractUsername(refreshToken);
-        String newAccessToken = jwtUtil.generateTokenFromUsername(username);
+        UserDetails userDetails = userDetailsService.loadUserByUsername(username);
+        MyUserDetails user = (MyUserDetails) userDetails;
 
-        // Optionally generate new refresh token (token rotation)
-        // String newRefreshToken = jwtUtil.generateRefreshToken(username);
-
-        return new AuthResponse(newAccessToken, refreshToken, username); // return the same or new refresh token
+        String newAccessToken = jwtUtil.generateToken(user);
+        return new AuthResponse(newAccessToken, refreshToken, user.getAppUsername(), user.getUserId());
     }
 
 }
