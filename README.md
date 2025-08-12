@@ -24,6 +24,7 @@ This project demonstrates secure authentication, tweet management, real-time sea
 ### 💻 Frontend
 
 - Flutter (for mobile & web UI)
+- Bloc or Provider for state management 
 
 ### ✍️ Design Tools
 
@@ -110,22 +111,21 @@ GET /api/Users
 Authorization: Bearer <your_jwt_token>
 
 ```
-📄 API Documentation - Swagger UI
-
+##### 📄 API Documentation - Swagger UI
 
 ```http
-
 http://localhost:8080/swagger-ui/index.html
-
 ```
-
-🧪 Testing
+#### 🧪 Testing
 All APIs tested via Postman.
+Postman collection:
+📂 Google Drive Link
 
---- Postman collection included in: https://drive.google.com/drive/folders/1_ySozFHyzFxJ48hpvoFNVzmGFn7h7KKT?usp=drive_link 
+
+
+📁 Folder Structure Overview (Backend)
 
 ```file 
-📁 Folder Structure Overview (Backend)
 pulsar-blog-app/
 ├── src/
 │   ├── main/
@@ -146,10 +146,11 @@ pulsar-blog-app/
 🚀 Getting Started
 Backend Setup
 ```bash
-####  Clone the repo
-```bash
+Clone the repo
+
 git clone https://github.com/pavanpanche/micro-blogging-app-backend.git
 cd micro-blogging-app-backend
+
 ```
 ##### application.properties
 
