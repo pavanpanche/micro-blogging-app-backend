@@ -151,7 +151,9 @@ Backend Setup
 git clone https://github.com/pavanpanche/micro-blogging-app-backend.git
 cd micro-blogging-app-backend
 ```
-# Set up your DB credentials in application.properties
+##### application.properties
+
+-Kindly Set up your DB credentials, secret key and session time according to your requirments in application.properties
 
 - Run the app
 ```java
@@ -160,6 +162,6 @@ mvn spring-boot:run
 
 
 ##### 🧑‍💻 Author
-Pavan Kumar Panche
-
+Pavan Panche 
+pavanpanche2@gmail.com
 
