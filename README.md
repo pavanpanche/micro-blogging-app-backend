@@ -111,7 +111,7 @@ GET /api/Users
 Authorization: Bearer <your_jwt_token>
 
 ```
-##### 📄 API Documentation - Swagger UI
+#### 📄 API Documentation - Swagger UI
 
 ```http
 http://localhost:8080/swagger-ui/index.html
@@ -143,7 +143,7 @@ pulsar-blog-app/
 ```
 ---
 
-🚀 Getting Started
+#### 🚀 Getting Started
 Backend Setup
 ```bash
 Clone the repo
@@ -152,7 +152,7 @@ git clone https://github.com/pavanpanche/micro-blogging-app-backend.git
 cd micro-blogging-app-backend
 
 ```
-###### Configure application.properties
+#### Configure application.properties
 - Set up your DB credentials, secret key, and session time according to your requirements.
   
 - Run the app
@@ -161,6 +161,6 @@ cd micro-blogging-app-backend
 mvn spring-boot:run
 ```
 
-#####🧑‍💻 Author
+#### 🧑‍💻 Author
 Pavan Panche
 📧 pavanpanche2@gmail.com
