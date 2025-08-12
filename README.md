@@ -124,6 +124,7 @@ All APIs tested via Postman.
 
 --- Postman collection included in: https://drive.google.com/drive/folders/1_ySozFHyzFxJ48hpvoFNVzmGFn7h7KKT?usp=drive_link 
 
+```file 
 📁 Folder Structure Overview (Backend)
 pulsar-blog-app/
 ├── src/
@@ -139,25 +140,26 @@ pulsar-blog-app/
 │   │       └── application.properties
 └── pom.xml
 
+```
 ---
 
 🚀 Getting Started
 Backend Setup
-bash
-Copy
-Edit
-# Clone the repo
+```bash
+####  Clone the repo
+```bash
 git clone https://github.com/pavanpanche/micro-blogging-app-backend.git
 cd micro-blogging-app-backend
-
+```
 # Set up your DB credentials in application.properties
 
-# Run the app
+- Run the app
+```java
 mvn spring-boot:run
+```
 
----
 
-🧑‍💻 Author
+##### 🧑‍💻 Author
 Pavan Kumar Panche
 
 
