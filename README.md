@@ -27,7 +27,7 @@ This project demonstrates secure authentication, tweet management, real-time sea
 
 ### ✍️ Design Tools
 
-- Excalidraw or Hand-drawn diagrams (for system design & DB schema)
+- Hand-drawn diagrams on pan & paper (for system design & DB schema)
 
 ---
 
